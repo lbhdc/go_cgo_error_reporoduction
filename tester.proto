@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package tester;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "tester";
+
+message AMessage {
+  google.protobuf.Timestamp first_seen = 1;
+}
